@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #8be9f8;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    color: #c1121f;
+}
+
+a:hover {
+    color: #c1121f;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+.navbar img {
+    width: 70%;
+}
+
+.bg-base {
+    background-color: #112A46;
+    color: whitesmoke;
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 2px #ffbe0b;
+}
+
+.box1 {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: #ffbe0b;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    border-bottom: 2px solid #112A46;
+}
+
+.text-brand {
+    color: #ffbe0b;
+}
+
+.navbar {
+    background-color: #8be9f8;
+}
+
+.navbar .nav-link {
+    font-weight: 400;
+    font-size: 1 rem;
+}
+
+.navbar .nav-link.active {
+    color: #ffbe0b;
+}
+
+.navbar .nav-link:hover {
+    background-color:  #ffbe0b;
+    color: white;
+}
+
+@media(min-width:992px) {
+    .navbar {
+        min-height: 100vh;
+        width: 240px;
+        background: white;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #content-wrapper {
+        padding-left: 240px;
+    }
+
+    .btn btn-warning:focus,
+    .btn btn-warning:hover {
+        background-color: #8be9f8;
+        color: #ffbe0b;
+        border: 2px solid #ffbe0b;
+    }
+
+    .link-custom {
+        font-weight: 700;
+        position: relative;
+    }
+
+    .link-custom::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: #c1121f;
+        position: absolute;
+        left: 0;
+        top: 110%;
+        transition: all 0.4s;
+    }
+
+    .link-custom:hover::after {
+        width: 100%;
+    }
+}
